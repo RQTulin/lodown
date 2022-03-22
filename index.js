@@ -64,7 +64,7 @@ module.exports.type0f = typeOf;
 
 
 /**
- * first: Function returns the element of an array of an input number. 
+ * first: Function returns the first x number of elements of an input array as determined by an input number. 
  * 
  * @param {Array} collection: Function takes in an input of an array.
  * @param {number} number: Function takes in a number. 
@@ -91,7 +91,7 @@ module.exports.first = first;
 
 
 /**
- * last: Function returns the element of an array of an input number. 
+ * last: Function returns the last x number of elements of an input array as determined by an input number.
  * 
  * @param {Array} collection: Function takes in an input of an array.
  * @param {number} number: Function takes in a number. 
@@ -289,7 +289,7 @@ module.exports.unique = unique;
  module.exports.map = map;
 
 /**
- * pluck: Function returns an array containing the value of the property.
+ * pluck: Pluck returns an array of every value from an object corresponding to an input property.
  * 
  * @param {array of object} collection: Function takes an input of an array.
  * @param {property} : Function takes in property. 
@@ -415,8 +415,8 @@ module.exports.unique = unique;
  * @param {Function} func: Function that iterate over each element in the array.
  * @param {accumulator} seed: It accumulates the value of each iteration.
  * 
- * @return {Array or Accumulator}: Function returns value of the final function call, 
- * after the last iteration.
+ * @return {Array or Accumulator}: Function returns the final accumulated value from passing each element
+ *  in the array through the function  "func".
  */
 
  function reduce(array, func, seed){
