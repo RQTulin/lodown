@@ -415,7 +415,7 @@ module.exports.unique = unique;
  * @param {Function} func: Function that iterate over each element in the array.
  * @param {accumulator} seed: It accumulates the value of each iteration.
  * 
- * @return {Array or Accumulator}: Function returns the final accumulated value from passing each element
+ * @return {accumulator}: Function returns the final accumulated value from passing each element
  *  in the array through the function  "func".
  */
 
